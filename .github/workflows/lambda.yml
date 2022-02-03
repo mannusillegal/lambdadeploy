@@ -14,9 +14,9 @@ jobs:
       - name: Deploy code to Lambda
         uses: qubitro/action-lambda-python-zip@v1.0
         with:
-          lambda_layer_arn: "arn:aws:lambda:eu-central-1:222222222222:layer:layer-name"
-          lambda_function_name: ${{ secrets.LAMBDA_FUNCTION_NAME }}
-          lambda_region: "us-east-1"
+          lambda_layer_arn: arn:aws:lambda:eu-central-1:222222222222:layer:layer-name"
+          lambda_function_name: lamdadfunc1 #${{ secrets.LAMBDA_FUNCTION_NAME }}
+          lambda_region: us-east-1
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
